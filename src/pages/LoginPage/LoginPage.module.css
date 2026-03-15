@@ -1,0 +1,203 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+.card {
+  width: 527px;
+  padding: 6px;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 24px 32px 0 rgba(0, 0, 0, 0.04);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 48px;
+  border: 1px solid #ededed;
+  border-radius: 34px;
+  background: linear-gradient(
+    180deg,
+    rgba(35, 35, 35, 0.03) 0%,
+    rgba(35, 35, 35, 0) 50%
+  );
+  overflow: hidden;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  border: 1px solid rgba(237, 237, 237, 0.7);
+  box-shadow:
+    0 0 0 2px #fff,
+    0 12px 8px 0 rgba(0, 0, 0, 0.03);
+  background:
+    linear-gradient(0deg, rgba(35, 35, 35, 0) 50%, rgba(35, 35, 35, 0.06) 100%),
+    #fff;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.title.title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.6px;
+  color: #232323;
+}
+
+.subtitle.subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.alert {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.form {
+  width: 399px;
+}
+
+/* Figma: 6px between label and input */
+.form :global(.ant-form-item .ant-form-item-row .ant-form-item-label) {
+  padding: 0 0 6px;
+}
+
+.form :global(.ant-form-item-label > label) {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.27px;
+  color: #232323;
+  height: auto;
+}
+
+/* Figma: 16px gap between login and password groups */
+.form :global(.ant-form-item) {
+  margin-bottom: 16px;
+}
+
+/* Figma: 20px gap after password field → checkbox */
+.passwordItem {
+  margin-bottom: 20px;
+}
+
+/* Figma: 20px gap after checkbox → button */
+.rememberItem {
+  margin-bottom: 20px;
+}
+
+.buttonItem {
+  margin-bottom: 0;
+}
+
+/* Figma: input padding 14px 16px, border-radius 12px */
+.form :global(.ant-input-affix-wrapper),
+.form :global(.ant-input) {
+  border-radius: 12px;
+  border: 1.5px solid #ededed;
+  padding: 14px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.27px;
+}
+
+.form :global(.ant-input-affix-wrapper .ant-input) {
+  padding: 0;
+  border: none;
+}
+
+.form :global(.ant-input-affix-wrapper .ant-input-prefix) {
+  margin-inline-end: 14px;
+  color: #9c9c9c;
+  font-size: 18px;
+}
+
+.form :global(.ant-input-affix-wrapper .ant-input-suffix) {
+  color: #9c9c9c;
+}
+
+.remember :global(.ant-checkbox) {
+  transform: scale(1.2);
+}
+
+.remember {
+  color: #9c9c9c;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.submitBtn.submitBtn {
+  height: auto;
+  padding: 16px 8px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.18px;
+  border: 1px solid #367aff;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.12) 100%
+    ),
+    #242edb;
+  box-shadow:
+    inset 0 -2px 0 1px rgba(0, 0, 0, 0.08),
+    0 8px 8px 0 rgba(54, 122, 255, 0.03);
+}
+
+.submitBtn.submitBtn:hover {
+  background:
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    ),
+    #1e28c5;
+}
+
+.divider.divider {
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: #ebebeb;
+  font-size: 16px;
+  font-weight: 500;
+  border-color: #ebebeb;
+}
+
+.register {
+  font-size: 18px;
+  color: #6c6c6c;
+}
+
+.registerLink {
+  color: #242edb;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.registerLink:hover {
+  color: #1e28c5;
+}
